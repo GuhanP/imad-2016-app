@@ -8,14 +8,19 @@ element.innerHTML='New Value';
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
+
+img.onClick = function( ) {
+    var interval = setInterval(moveRight,50);
+};
+
 function moveRight() {
     marginLeft = marginLeft+1;
     img.style.marginLeft =marginLeft + 'px';
 }
-var i = 0;
-img.onClick = function( ) {
-    var interval = setInterval((marginLeft+i)+ 'px',50);
-    i=i+1;
- //   img.style.marginLeft ='100px';
+//var i = 0;
+//img.onClick = function( ) {
+//    var interval = setInterval((marginLeft+i)+ 'px',50);
+//    i=i+1;
+// //   img.style.marginLeft ='100px';
     
-};
+//};
