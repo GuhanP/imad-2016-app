@@ -4,19 +4,19 @@ console.log('Loaded!');
 var element = document.getElementById('main-text');
 element.innerHTML='New Value';
 
-// move the image
+//// move the image
 
-var img = document.getElementById('madi');
-var marginLeft = 0;
+//var img = document.getElementById('madi');
+//var marginLeft = 0;
 
-img.onClick = function( ) {
-    var interval = setInterval(moveRight,50);
-};
+//img.onClick = function( ) {
+//    var interval = setInterval(moveRight,50);
+//};
 
-function moveRight() {
-    marginLeft = marginLeft+1;
-    img.style.marginLeft =marginLeft + 'px';
-}
+//function moveRight() {
+//    marginLeft = marginLeft+1;
+//    img.style.marginLeft =marginLeft + 'px';
+//}
 //var i = 0;
 //img.onClick = function( ) {
 //    var interval = setInterval((marginLeft+i)+ 'px',50);
