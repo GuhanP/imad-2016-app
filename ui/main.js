@@ -10,9 +10,9 @@ button.onclick = function(){
         if(request.readystate === XMLHttpRequest.DONE){
             // takle some action
             if(request.status === 200){
-                var counter =  request/responseText;
+                var counter =  request.responseText;
                 var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
+                span.InnerHTML = counter.toString();
             }
         }
         // not done yet
