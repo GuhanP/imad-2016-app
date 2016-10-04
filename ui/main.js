@@ -18,13 +18,10 @@ button.onclick = function(){
         // not done yet
     };
     //render the variable in the correct span
-    
-    counter = counter +1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
-};
-
 // make request
     request.open('GET','http://guhanp.imad.hasura-app.io/counter',true);
     request.send(null);
+  
+};
+
 
