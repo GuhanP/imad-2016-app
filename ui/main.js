@@ -28,30 +28,3 @@ button.onclick = function(){
     request.open('GET','http://guhanp.imad.hasura-app.io/counter',true);
     request.send(null);
 
-//console.log('Loaded!');
-
-// Change the text of the main-text div
-//var element = document.getElementById('main-text');
-//element.innerHTML='New Value';
-
-// move the image
-
-var img = document.getElementById('madi');
-var marginLeft = 0;
-
-function moveRight() {
-    marginLeft = marginLeft+1;
-    img.style.marginLeft =marginLeft + 'px';
-}
-
-img.onclick = function( ) {
-    var interval = setInterval(moveRight,50);
-};
-
-//var i = 0;
-//img.onclick = function( ) {
-//    var interval = setInterval((marginLeft+i)+ 'px',50);
-//    i=i+1;
-//   img.style.marginLeft ='100px';
-    
-//};
